@@ -1,5 +1,7 @@
 package it.univpm.Progetto_Programmazione.GestioneDati;
 
-public class Metadata {
+// i metadata sono le macro-categorie che vi sono nel dataset
 
+public class Metadata {
+ 
 }
