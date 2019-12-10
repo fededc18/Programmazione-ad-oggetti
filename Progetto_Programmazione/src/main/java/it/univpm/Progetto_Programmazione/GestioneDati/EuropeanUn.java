@@ -5,14 +5,14 @@ import java.io.Serializable;
 public class EuropeanUn implements Serializable 
 {
   
-  private int Time_period;
+  private int Period;
   private String Fc_en, Fc_ind_en, Fc_oth_en, Members_UE, Unit_measure;
   private double Value;
   
   /**
 	 * Costruttore della classe
 	 * 
-	 * @param time_period
+	 * @param period
 	 * @param fc_en
 	 * @param fc_ind_en
 	 * @param fc_oth_en
@@ -21,25 +21,25 @@ public class EuropeanUn implements Serializable
 	 * @param value
 	 */
   
-  public EuropeanUn (int time_period,String fc_en,String fc_ind_en,String fc_oth_en,String members_UE,String unit_measure, double value)
+  public EuropeanUn (int period,String fc_en,String fc_ind_en,String fc_oth_en,String members_UE,String unit_measure, double value)
   {
 	  this.Fc_en= fc_en;
 	  this.Fc_ind_en= fc_ind_en;
 	  this.Fc_oth_en= fc_oth_en;
 	  this.Members_UE= members_UE;
-	  this.Time_period= time_period;
+	  this.Time_period= period;
 	  this.Unit_measure= unit_measure;
 	  this.Value= value;
   }
   
 //Implementazione Getters and Setters
 
-  public int getTime_period() {
-	return Time_period;
+  public int getPeriod() {
+	return Period;
   }
 
-  public void setTime_period(int time_period) {
-	Time_period = time_period;
+  public void setPeriod(int period) {
+	Period = period;
   }
 
   public String getFc_en() {
@@ -96,7 +96,7 @@ public class EuropeanUn implements Serializable
    */
   @Override
   public String toString() {
-	  return "EuropeanUE [Members_UE=" + Members_UE + "time_period=" + Time_period + ",Fc_en="
+	  return "EuropeanUE [Members_UE=" + Members_UE + "period=" + Period + ",Fc_en="
 				+ Fc_en + ",Fc_ind_en=" + Fc_ind_en + "Fc_oth_en" + Fc_oth_en + ",unit_measure=" 
 			    + Unit_measure + ",value=" + Value + " ]";
   }

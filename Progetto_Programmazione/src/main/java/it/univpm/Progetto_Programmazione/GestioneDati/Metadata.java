@@ -6,8 +6,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// i metadata sono le macro-categorie che vi sono nel dataset
+/**
+ * Classe per la restituzione dei metadata(le macrocategorie che vi sono nel dataset)
+ */
 
 public class Metadata {
+	
+	private ArrayList<Map> metadata = new ArrayList<Map>();
+	
+	
  
 }
