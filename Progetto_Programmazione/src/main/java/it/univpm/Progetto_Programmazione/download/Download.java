@@ -41,7 +41,7 @@ public class Download {
 		 for(Object obj : objectArray) {
 			 if (obj instanceof JSONObject) {
 				 JSONObject obj1 = (JSONObject)obj;
-				if(((String)obj1.get("format")).toLowerCase().contains("tsv") && ((String)obj1.get("url")).contains("student"))  // estrae il csv desiderato verificando la presenza della stringa student nell'url che si vuole estrarre
+				if(((String)obj1.get("format")).toLowerCase().contains("tsv") && ((String)obj1.get("url")).contains("student"))  // estrae il tsv desiderato verificando la presenza della stringa student nell'url che si vuole estrarre
 					 link = (String)obj1.get("url");
 			 }
 		 }			
