@@ -27,7 +27,7 @@ public class EuropeanUn implements Serializable
 	  this.Fc_ind_en= fc_ind_en;
 	  this.Fc_oth_en= fc_oth_en;
 	  this.Members_UE= members_UE;
-	  this.Time_period= period;
+	  this.Period= period;
 	  this.Unit_measure= unit_measure;
 	  this.Value= value;
   }
