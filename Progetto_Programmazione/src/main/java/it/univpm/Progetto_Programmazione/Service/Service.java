@@ -29,6 +29,7 @@ public class Service {
     public Service()
     {
     	
+    	
     }
     
     
@@ -37,7 +38,7 @@ public class Service {
 	 * @return la lista dei metadati
 	 */
 	public List<Map> getMetadata() {
-		return serviceMeta.getMetadata();
+		return Mdata.getMetadata();
 	}
 	
 	/**
