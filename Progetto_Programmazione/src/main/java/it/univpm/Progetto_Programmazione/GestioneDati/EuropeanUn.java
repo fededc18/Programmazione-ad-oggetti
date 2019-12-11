@@ -96,7 +96,7 @@ public class EuropeanUn implements Serializable
    */
   @Override
   public String toString() {
-	  return "EuropeanUE [Members_UE=" + Members_UE + "period=" + Period + ",Fc_en="
+	  return "EuropeanUE [Members_UE=" + Members_UE + "Period=" + Period + ",Fc_en="
 				+ Fc_en + ",Fc_ind_en=" + Fc_ind_en + "Fc_oth_en" + Fc_oth_en + ",unit_measure=" 
 			    + Unit_measure + ",value=" + Value + " ]";
   }
