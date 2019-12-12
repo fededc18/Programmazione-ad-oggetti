@@ -2,24 +2,13 @@ package it.univpm.Progetto_Programmazione.GestioneDati;
 
 import java.io.Serializable;
 
-public class EuropeanUn implements Serializable 
+public class Energia implements Serializable 
 {
+
+  private String nrg_bal,siec,unit,geo\time;
+  private int [] Valori = new int [] 
   
-  private int Period;
-  private String Fc_en, Fc_ind_en, Fc_oth_en, Members_UE, Unit_measure;
-  private double Value;
-  
-  /**
-	 * Costruttore della classe
-	 * 
-	 * @param period
-	 * @param fc_en
-	 * @param fc_ind_en
-	 * @param fc_oth_en
-	 * @param members_UE
-	 * @param unit_measure
-	 * @param value
-	 */
+ 
   
   public EuropeanUn (int period,String fc_en,String fc_ind_en,String fc_oth_en,String members_UE,String unit_measure, double value)
   {

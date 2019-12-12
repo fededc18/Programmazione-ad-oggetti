@@ -26,6 +26,7 @@ public class DownloadAndParsing {
 	
 	private List<EuropeanUn> EuropeanUnList;
 	private String link = "";
+	private String url="http://data.europa.eu/euodp/data/api/3/action/package_show?id=erasmus-mobility-statistics-2011-12";
 	
 	/**
 	 * Metodo che effettua il download del dataset estraendo il link del tsv 
