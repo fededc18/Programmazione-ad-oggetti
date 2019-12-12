@@ -17,7 +17,7 @@ public class Metadata {
 	
     public Metadata() 
     {
-		Field[] fields = EuropeanUn.class.getDeclaredFields();//estrae gli attributi della classe EuropeanUn
+		Field[] fields = Energy.class.getDeclaredFields();//estrae gli attributi della classe EuropeanUn
 	
 	    for ( Field f : fields ) 
         {
