@@ -12,12 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import it.univpm.Dati_Europa.Model.MainCat;
-import it.univpm.Dati_Europa.Services.Services;
+
 import it.univpm.Progetto_Programmazione.GestioneDati.*;
-import it.univpm.Progetto_Programmazione.GestioneDati.EuropeanUn;
-import it.univpm.Progetto_Programmazione.Model.MacroCat;
-import it.univpm.Progetto_Programmazione.Model.SubCat;
+import it.univpm.Progetto_Programmazione.GestioneDati.Energy;
 import it.univpm.Progetto_Programmazione.Service.*;
 import it.univpm.Progetto_Programmazione.Service.Service;
 
