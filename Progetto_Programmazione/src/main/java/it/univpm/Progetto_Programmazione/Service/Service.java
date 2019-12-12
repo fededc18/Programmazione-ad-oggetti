@@ -6,6 +6,10 @@ import java.util.Map;
 import org.springframework.stereotype.Service;
 
 import com.lindatato.Progetto.Model.Erasmus;
+import com.lindatato.Progetto.Service.Filter;
+import com.lindatato.Progetto.Service.Metadata;
+import com.lindatato.Progetto.Service.Stats;
+import com.lindatato.Progetto.Utilities.DownloadAndParsing;
 
 /**
  * Classe concepita per rispondere alle richieste effettuate tramite postman, utilizzando le classi precedentemente create
@@ -19,7 +23,7 @@ public class Service {
     private Metadata Mdata;
     private Statistic stats;
     private Filter filtri;
-    private List<EuropeanUn> lista;
+    private List<Energy> lista;
     
     /*
      * Costruttore che, all'avvio dell'applicazione, effettua Download e Parsing dei dati del tsv
@@ -28,8 +32,15 @@ public class Service {
 	
     public Service()
     {
-    	
-    	
+    	this.dp = new DownloadAndParsing();
+		this.Mdata = new Metadata();
+		this.stats = new Statistic();
+		this.filtri = new Filter();
+		
+		String link="";
+		
+		link = dp.download(url);
+		lista = dp.parsing(link);
     }
     
     
@@ -45,7 +56,7 @@ public class Service {
 	 * Metodo che restituisce i dati del file
 	 * @return lista dei dati
 	 */
-	public List<EuropeanUn> getData() {
+	public List<Energy> getData() {
  		return this.lista;
 	}
 	
